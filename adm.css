@@ -1,0 +1,96 @@
+/* Navbar */
+.navbar-custom {
+background-color: #ffdae0;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.navbar-brand {
+font-size: 1.8rem;
+font-weight: bold;
+color: #a0417e !important;
+}
+.navbar-nav .nav-link {
+color: #5d2e46 !important;
+font-size: 1.1rem;
+margin-right: 15px;
+position: relative;
+transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+color: #ff69b4 !important;
+}
+
+/* Anuncio */
+.banner-admin {
+text-align: center;
+margin: 40px 0;
+}
+.banner-admin img {
+max-width: 100%;
+height: auto;
+border-radius: 20px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+background-color: #f9c5d1;
+color: #5d2e46;
+padding: 40px 0;
+margin-top: auto;
+}
+.footer h5 {
+color: #a0417e;
+margin-bottom: 15px;
+}
+.footer a {
+color: #5d2e46;
+text-decoration: none;
+}
+.footer a:hover {
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+.navbar-nav {
+    background-color: #ffdae0;
+    padding: 10px;
+    border-radius: 10px;
+}
+}
+
+/* Layout principal para empujar el footer abajo */
+body, html {
+height: 100%;
+margin: 0;
+}
+
+.main-wrapper {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.main-content {
+flex-grow: 1;
+}
+/* Estilo para el banner de bienvenida */
+.welcome-banner {
+display: block;
+margin: 60px auto;
+max-width: 90%;
+border-radius: 20px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+transition: transform 0.3s ease;
+}
+
+.welcome-banner:hover {
+transform: scale(1.02);
+}
+.admin-banner {
+display: block;
+margin: 40px auto;
+max-width: 100%;
+width: 90%;
+border-radius: 20px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
