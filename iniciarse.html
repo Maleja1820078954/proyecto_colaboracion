@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="iniciarse.css">
+</head>
+<body>
+    <div class="card bg-white">
+        <h2 class="text-center mb-3">Iniciar sesión</h2>
+        <p class="text-center">¿Es tu primera vez? <a href="#">Regístrate</a></p>
+
+        <form>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña *</label>
+                <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+
+            <div class="d-flex justify-content-end mb-3">
+                <a href="#" class="small text-decoration-none">¿Olvidaste la contraseña?</a>
+            </div>
+
+            <button type="button" class="btn btn-primary w-100" onclick="window.location.href='adm.html'">Iniciar sesión</button>
+        </form>
+
+        <div class="text-center mt-4">
+            <p class="mb-2">o conéctate con</p>
+            <div class="d-flex justify-content-center gap-3 social-login">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                <img src="img/google.png" alt="Google">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
