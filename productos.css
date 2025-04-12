@@ -1,0 +1,52 @@
+.navbar-custom {
+    background-color: #ffdae0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #a0417e !important;
+}
+
+.navbar-nav .nav-link {
+    color: #5d2e46 !important;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff69b4 !important;
+}
+
+.section-title {
+    color: #a0417e;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.card {
+    margin-top: 60px;
+    background-color: #fff0f5;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.display-4{
+text-align: center;
+padding: 15px 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+    background-color: #ffdae0;
+    padding: 10px;
+    border-radius: 10px;
+    }
+}

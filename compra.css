@@ -1,0 +1,71 @@
+.purchase-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    margin: 60px auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.purchase-container h2 {
+    text-align: center;
+    color: #a0417e;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.purchase-container button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #d48ca4, #f7c3d1);
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.purchase-container button:hover {
+    background: linear-gradient(to right, #f7c3d1, #d48ca4);
+}
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+    transform: translateY(10px);
+    }
+    100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
