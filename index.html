@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Candy Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg sticky-top navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-cupcake"></i> Candy Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="iniciarse.html">Iniciar sesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1 class="display-4">¡Bienvenidos a Candy Shop!</h1>
+      <p class="lead">Donde cada dulce es una sonrisa. Te ofrecemos lo mejor en caramelos, gomitas y chocolates con amor pastel.</p>
+      <p class="mt-4 fs-5">Nuestra dulcería está comprometida con la calidad y la magia en cada entrega. Ya sea para un evento, una fiesta o simplemente para alegrarte el día, tenemos el dulce perfecto para ti. ¡Explora y déjate llevar por el sabor!</p>
+    </div>
+  </section>
+
+  <div class="parallax-image"></div>
+
+  <div class="container2">
+
+    <h1 class="titulo1">Significado del Nombre</h1>
+    <p class="parrafo1">
+      Candy Shop representa un mundo lleno de dulzura, alegría y color. Más que una tienda de dulces, 
+      simboliza un espacio donde se despiertan emociones positivas, se reviven recuerdos felices de la 
+      infancia y se ofrece una experiencia deliciosa que va más allá de lo esperado. El nombre combina 
+      lo clásico con lo moderno, transmitiendo confianza y encanto.
+    </p>
+
+    <div class="contenedor-dos-columnas">
+      <div class="columna">
+        <h1 class="titulo2">Nuestra Visión</h1>
+        <p class="parrafo2">
+          Brindar momentos de felicidad a través de la comercialización de productos dulces, 
+          innovadores y de alta calidad, satisfaciendo los gustos de todas las edades con un excelente servicio, 
+          precios competitivos y una atención cálida y cercana. En Candy Shop, nos comprometemos a endulzar la vida 
+          de nuestros clientes, creando experiencias memorables en cada compra.
+        </p>
+      </div>
+      
+      <div class="columna">
+        <h1 class="titulo2">Nuestra Misión</h1>
+        <p class="parrafo2">
+          Ser reconocidos a nivel regional y nacional como la comercializadora líder en productos
+          de confitería y golosinas, destacándonos por nuestra creatividad, variedad, compromiso con la calidad y el 
+          servicio excepcional. Aspiramos a expandir nuestro catálogo, llegar a nuevos mercados y seguir construyendo 
+          un negocio que inspire sonrisas en cada rincón del país.
+        </p>
+      </div>
+    </div>
+      
+  </div>
+  <footer class="footer">
+    <div class="container" id="nosotros">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre Nosotros</h5>
+          <p> En Candy Shop, somos una comercializadora apasionada por la dulzura, los detalles y la felicidad 
+            que provocan los pequeños momentos. Nos dedicamos a ofrecer una amplia variedad de productos 
+            deliciosos y de calidad, ideales para sorprender, compartir o simplemente disfrutar. 
+           
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contacto</h5>
+          <p>Email: contacto@candyshop.com</p>
+          <p>Teléfono: (123) 456 7890</p>
+          <p>Dirección: Calle de los Caramelos, 123, Ciudad Dulce</p>
+        </div>
+        
+        <div class="col-md-4">
+          <h5>Síguenos</h5>
+          <a href="#"><i class="bi bi-facebook me-2"></i>Facebook</a><br>
+          <a href="#"><i class="bi bi-instagram me-2"></i>Instagram</a><br>
+          <a href="#"><i class="bi bi-twitter me-2"></i>Twitter</a>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">© 2025 Candy Shop - Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 80) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
